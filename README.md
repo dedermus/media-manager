@@ -20,7 +20,7 @@ Media manager for `local` disk.
 ## Installation
 
 ```shell
-composer require open-admin-ext/media-manager
+composer require dedermus/media-manager
 
 php artisan admin:import media-manager
 ```

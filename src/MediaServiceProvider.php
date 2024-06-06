@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Media;
+namespace OpenAdminCore\Admin\Media;
 
 use Illuminate\Support\ServiceProvider;
 

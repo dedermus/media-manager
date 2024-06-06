@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenAdmin\Admin\Media;
+namespace OpenAdminCore\Admin\Media;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Local\LocalFilesystemAdapter;
-use OpenAdmin\Admin\Exception\Handler;
-use OpenAdmin\Admin\Extension;
+use OpenAdminCore\Admin\Exception\Handler;
+use OpenAdminCore\Admin\Extension;
 
 /**
  * Class MediaManager.

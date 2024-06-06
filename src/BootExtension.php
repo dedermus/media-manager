@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\Media;
+namespace OpenAdminCore\Admin\Media;
 
-use OpenAdmin\Admin\Admin;
+use OpenAdminCore\Admin\Admin;
 
 trait BootExtension
 {
@@ -25,12 +25,12 @@ trait BootExtension
     {
         parent::routes(function ($router) {
             /* @var \Illuminate\Routing\Router $router */
-            $router->get('media', 'OpenAdmin\Admin\Media\MediaController@index')->name('media-index');
-            $router->get('media/download', 'OpenAdmin\Admin\Media\MediaController@download')->name('media-download');
-            $router->delete('media/delete', 'OpenAdmin\Admin\Media\MediaController@delete')->name('media-delete');
-            $router->put('media/move', 'OpenAdmin\Admin\Media\MediaController@move')->name('media-move');
-            $router->post('media/upload', 'OpenAdmin\Admin\Media\MediaController@upload')->name('media-upload');
-            $router->post('media/folder', 'OpenAdmin\Admin\Media\MediaController@newFolder')->name('media-new-folder');
+            $router->get('media', 'OpenAdminCore\Admin\Media\MediaController@index')->name('media-index');
+            $router->get('media/download', 'OpenAdminCore\Admin\Media\MediaController@download')->name('media-download');
+            $router->delete('media/delete', 'OpenAdminCore\Admin\Media\MediaController@delete')->name('media-delete');
+            $router->put('media/move', 'OpenAdminCore\Admin\Media\MediaController@move')->name('media-move');
+            $router->post('media/upload', 'OpenAdminCore\Admin\Media\MediaController@upload')->name('media-upload');
+            $router->post('media/folder', 'OpenAdminCore\Admin\Media\MediaController@newFolder')->name('media-new-folder');
         });
     }
 
